@@ -1,6 +1,6 @@
 import { styles } from "@/styles";
-import { Ionicons } from "@expo/vector-icons";
-import { Image, Text, View } from "react-native";
+import { FontAwesome, Ionicons } from "@expo/vector-icons";
+import { Image, Text, TextInput, View } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
@@ -18,6 +18,20 @@ export default function Index() {
         </Text>
 
         {/* Form Group */}
+        <View style={styles.formGroup}>
+          <View>
+            <Text style={styles.placeholderText}>Email</Text>
+            <TextInput keyboardType="email-address" style={styles.inputField} />
+          </View>
+          <View style={{ marginTop: 20 }}>
+            <Text>Password</Text>
+            <View>
+              <TextInput style={{ flex: 1 }} />
+              <FontAwesome name="eye-slash" size={24} color="#7E7B7B" />
+            </View>
+          </View>
+          <Text style={styles.forgotPasswordText}>Forgot password?</Text>
+        </View>
       </SafeAreaView>
     </SafeAreaProvider>
   );
