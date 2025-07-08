@@ -79,4 +79,37 @@ const styles = StyleSheet.create({
     gap: 15,
     marginTop: 25,
   },
+  dividerGroup: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
+    marginTop: 29,
+  },
+  divider: {
+    borderWidth: 0.5,
+    borderColor: "#c2c2c2",
+    flex: 1,
+  },
+  dividerText: {
+    fontSize: 17,
+    color: "#c2c2c2",
+  },
+  subTextGroup: {
+    flexDirection: "row",
+    position: "absolute",
+    bottom: 33,
+    left: 77,
+    right: 76,
+  },
+  subText: {
+    fontSize: 18,
+    color: "#b5b5b5",
+  },
+  subTextJoin: {
+    fontSize: 18,
+    color: "#FFA800",
+    fontWeight: 600,
+  },
 });
+
+export { styles };
