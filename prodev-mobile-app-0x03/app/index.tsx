@@ -1,6 +1,6 @@
 import { styles } from "@/styles";
 import { FontAwesome, Ionicons } from "@expo/vector-icons";
-import { Image, Text, TextInput, View } from "react-native";
+import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
@@ -25,13 +25,25 @@ export default function Index() {
           </View>
           <View style={{ marginTop: 20 }}>
             <Text>Password</Text>
-            <View>
-              <TextInput style={{ flex: 1 }} />
-              <FontAwesome name="eye-slash" size={24} color="#7E7B7B" />
+            <View style={{ flexDirection: "row", alignItems: "center" }}>
+              <TextInput style={[styles.inputField, { flex: 1 }]} />
+              <FontAwesome
+                name="eye-slash"
+                size={24}
+                color="#7E7B7B"
+                style={{ position: "absolute" }}
+              />
             </View>
           </View>
           <Text style={styles.forgotPasswordText}>Forgot password?</Text>
         </View>
+
+        <TouchableOpacity style={styles.button}>
+          <Text style={styles.buttonText}>Sign In</Text>
+        </TouchableOpacity>
+
+        {/* Divider Group */}
+        <View></View>
       </SafeAreaView>
     </SafeAreaProvider>
   );
