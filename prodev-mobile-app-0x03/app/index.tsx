@@ -43,7 +43,41 @@ export default function Index() {
         </TouchableOpacity>
 
         {/* Divider Group */}
-        <View></View>
+        <View style={styles.dividerGroup}>
+          <View style={styles.divider}></View>
+          <Text style={styles.dividerText}>OR</Text>
+          <View style={styles.divider}></View>
+        </View>
+
+        {/* Social Media Button Group */}
+        <View style={styles.socialMediaButtonGroup}>
+          <TouchableOpacity style={styles.socialMediaButton}>
+            <View
+              style={{ flexDirection: "row", alignItems: "center", gap: 10 }}
+            >
+              <Image source={require("@/assets/images/google.png")} />
+              <Text style={styles.socialMediaButtonText}>
+                Continue with Google
+              </Text>
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.socialMediaButton}>
+            <View
+              style={{ flexDirection: "row", alignItems: "center", gap: 10 }}
+            >
+              <Image source={require("@/assets/images/facebook.png")} />
+              <Text style={styles.socialMediaButtonText}>
+                Continue with Facebook
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+
+        {/* Sub Text Group */}
+        <View style={styles.subTextGroup}>
+          <Text style={styles.subText}>Don't have an account?</Text>
+          <Text style={styles.subTextJoin}>Join now</Text>
+        </View>
       </SafeAreaView>
     </SafeAreaProvider>
   );

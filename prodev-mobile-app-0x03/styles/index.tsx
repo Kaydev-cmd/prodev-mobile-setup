@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   socialMediaButtonText: {
     fontSize: 18,
     color: "#0D0D0D",
-    fontWeight: 400,
+    fontWeight: 500,
   },
   socialMediaButtonGroup: {
     gap: 15,
@@ -96,6 +96,7 @@ const styles = StyleSheet.create({
   },
   subTextGroup: {
     flexDirection: "row",
+    gap: 10,
     position: "absolute",
     bottom: 33,
     left: 77,
@@ -107,7 +108,7 @@ const styles = StyleSheet.create({
   },
   subTextJoin: {
     fontSize: 18,
-    color: "#FFA800",
+    color: "#2B876E",
     fontWeight: 600,
   },
 });
