@@ -25,13 +25,13 @@ export default function Index() {
           </View>
           <View style={{ marginTop: 20 }}>
             <Text>Password</Text>
-            <View style={{ flexDirection: "row", alignItems: "center" }}>
+            <View style={{position: "relative" ,flexDirection: "row", alignItems: "center" }}>
               <TextInput style={[styles.inputField, { flex: 1 }]} />
               <FontAwesome
                 name="eye-slash"
                 size={24}
                 color="#7E7B7B"
-                style={{ position: "absolute" }}
+                style={{ position: "absolute", right: 10 }}
               />
             </View>
           </View>
