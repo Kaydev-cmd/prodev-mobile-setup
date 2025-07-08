@@ -19,9 +19,12 @@ export default function Index() {
           resizeMode="cover"
         >
           <View style={styles.container}>
+            {/* Logo */}
             <View style={styles.companyLogo}>
               <Image source={require("@/assets/images/Logo.png")} />
             </View>
+
+            {/* Text Group */}
             <View style={styles.textGroup}>
               <Text style={styles.textLarge}>
                 Find your favorite place here
@@ -29,6 +32,8 @@ export default function Index() {
               <Text style={styles.textSmall}>The best prices for over 2</Text>
               <Text style={styles.textSmall}>million properties worldwide</Text>
             </View>
+
+            {/* Button Group */}
             <View style={styles.buttonGroup}>
               <TouchableOpacity style={styles.button}>
                 <Text style={{ ...styles.textSmall, color: "black" }}>
@@ -44,6 +49,7 @@ export default function Index() {
                 <Text style={{ color: "white" }}>Continue to home</Text>
               </View>
             </View>
+            
           </View>
         </ImageBackground>
       </SafeAreaView>
