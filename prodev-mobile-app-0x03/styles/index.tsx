@@ -45,4 +45,38 @@ const styles = StyleSheet.create({
   formGroup: {
     marginTop: 40,
   },
+  forgotPasswordText: {
+    fontSize: 17,
+    marginTop: 9,
+    textAlign: "right",
+    color: "#34967C",
+  },
+  button: {
+    backgroundColor: "#2B876E",
+    height: 53,
+    borderRadius: 10,
+    marginTop: 25,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  buttonText: {
+    fontSize: 17,
+    color: "white",
+  },
+  socialMediaButton: {
+    borderWidth: 1,
+    height: 50,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 10,
+  },
+  socialMediaButtonText: {
+    fontSize: 18,
+    color: "#0D0D0D",
+    fontWeight: 400,
+  },
+  socialMediaButtonGroup: {
+    gap: 15,
+    marginTop: 25,
+  },
 });
